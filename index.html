@@ -129,6 +129,19 @@
     font-size: 13px;
   }
 
+
+  /* --- LUM logo: gradient U swapped into the wordmark --- */
+  .wm { white-space: nowrap; }
+  .wm .u {
+    display: inline-block;
+    width: 0.7817em;
+    height: 0.7817em;
+    margin-left: 0.1783em;
+    margin-right: 0.1270em;
+    vertical-align: -0.0554em;
+  }
+  .wm .u svg { display: block; width: 100%; height: 100%; }
+
   @media (max-width: 640px) {
     .tiles { grid-template-columns: 1fr; }
     nav .links { gap: 18px; }
@@ -138,16 +151,16 @@
 <body>
 
   <nav>
-    <a class="brand" href="#top">LumSina</a>
+    <a class="brand wm" href="#top" aria-label="LumSina">L<span class="u" aria-hidden="true"><svg viewBox="321 26 268 268"><defs><linearGradient id="ug_nav" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#244D9A"/><stop offset="52%" stop-color="#197CB4"/><stop offset="100%" stop-color="#10A7CF"/></linearGradient></defs><path d="M350 55V160C350 232 401 265 455 265C509 265 560 232 560 160V55" fill="none" stroke="url(#ug_nav)" stroke-width="58" stroke-linecap="round" stroke-linejoin="round"/><path d="M350 63V161C350 217 383 244 423 258" fill="none" stroke="#FFFFFF" stroke-opacity="0.92" stroke-width="11" stroke-linecap="round"/></svg></span>MSina</a>
     <div class="links">
       <a href="#advantage">Advantage</a>
       <a href="#inspiration">Inspiration</a>
-      <a href="#about">About</a>
+      <a href="#contact">Contact Us</a>
     </div>
   </nav>
 
   <section class="hero" id="top">
-    <h1>LumSina</h1>
+    <h1 class="wm" aria-label="LumSina">L<span class="u" aria-hidden="true"><svg viewBox="321 26 268 268"><defs><linearGradient id="ug_hero" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#244D9A"/><stop offset="52%" stop-color="#197CB4"/><stop offset="100%" stop-color="#10A7CF"/></linearGradient></defs><path d="M350 55V160C350 232 401 265 455 265C509 265 560 232 560 160V55" fill="none" stroke="url(#ug_hero)" stroke-width="58" stroke-linecap="round" stroke-linejoin="round"/><path d="M350 63V161C350 217 383 244 423 258" fill="none" stroke="#FFFFFF" stroke-opacity="0.92" stroke-width="11" stroke-linecap="round"/></svg></span>MSina</h1>
     <p>A small model that can actually think.</p>
   </section>
 
@@ -175,8 +188,8 @@
     <p>Above all, we're philosophers, obsessed with how thinking flows since before the LLM era. By combining our engineering with a Cartesian approach to reasoning, we've made a remarkable breakthrough.</p>
   </section>
 
-  <section class="block prose" id="about">
-    <div class="label">About</div>
+  <section class="block prose" id="contact">
+    <div class="label">Contact Us</div>
     <p><a href="mailto:hi@lumsina.com" style="color:var(--fg);border-bottom:1px solid var(--accent);text-decoration:none;padding-bottom:2px;">hi@lumsina.com</a></p>
   </section>
 
